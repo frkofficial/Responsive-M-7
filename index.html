@@ -16,10 +16,85 @@
             width: 50px;
             height: 50px;
         }
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 200px  200px; */
+            /* grid-template-columns: repeat(2, 100px); */
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .item{
+            border: 2px solid  palevioletred;
+        }
     </style>
 </head>
 <body>
-    <h2>Flex Box Layout</h2>
+    <nav>
+        <div>
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">Blog</a>
+        <a href="">About</a>
+        </div>
+        <a href="">Login</a>
+    </nav>
+    <!-- login -->
+    <section class="login-container">
+        <form action="" class="login-form">
+        <h3>Please login</h3>
+        <input type="email" name="" id="" placeholder="Your Email" required>
+        <input type="password" name="" id="" placeholder="password" required>
+        <button>Login</button>
+    </form>
+    </section>
+
+    <!-- grid layout -->
+    <section>
+
+    </section>
+    <h3>Grid Layout</h3>
+       <div class="grid-container">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div>
+        <div class="item">item-15</div>
+        <div class="item">item-16</div>
+        <div class="item">item-17</div>
+        <div class="item">item-18</div>
+        <div class="item">item-19</div>
+        <div class="item">item-20</div>
+       </div>
+    <section>
+     <h2>Flex Box Layout</h2>
     <div class="container">
         <div class="box">box-1</div>
         <div class="box">box-2</div>
@@ -28,6 +103,7 @@
 
     <ol>
         <h3>Flex Box</h3>
+        <li>Flex is uni directional</li>
         <li>Space evenly - Shobar majhe accurate space dibe</li>
         <li>Space around</li>
         <li>Space between</li>
@@ -37,5 +113,16 @@
         <li>Flex wrap</li>
 
     </ol>
+
+    
+    </section>
+    <section>
+        <ol>
+        <h3>Grid Notes</h3>
+        <li>grid-template-columns: 200px  200px</li>
+        <li>grid-template-columns: repeat(2, 100px) - 2 hocche koybar repeat hobe sheta & 100px hocche size koto hobe sheta.</li>
+        <li>grid-template-columns: repeat(3, 1fr) - 3 hocche koy bhag hobe & 1fr hocche shobai same height and width pabe</li>
+    </ol>
+    </section>
 </body>
 </html>
